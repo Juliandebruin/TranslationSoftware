@@ -15,5 +15,7 @@ void CreateJson::append(String key, String value) {
 }
 
 String CreateJson::get_json_string() {
+    int lastIndex = _json_string.length() - 1;
+	_json_string.remove(lastIndex);
     return "{" + _json_string + "}\n";
 }

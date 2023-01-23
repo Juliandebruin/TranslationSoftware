@@ -81,6 +81,7 @@ void testSendingJsonData() {
 	spoofMapData();
 	String json = createJsonOfMap();
 	uartComs.send_message(json);
+	Serial.print(json);
 	delay(300);
 }
 
