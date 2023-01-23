@@ -15,5 +15,5 @@ void CreateJson::append(String key, String value) {
 }
 
 String CreateJson::get_json_string() {
-    return "{" + _json_string + "}";
+    return "{" + _json_string + "}\n";
 }

@@ -27,12 +27,26 @@ public:
      */
     void add(String key, String value);
     /**
-     * @brief Get the value of a key.
+     * @brief Update the value of a key.
+     * 
+     * @param key Key to update.
+     * @param value New value of the key.
+     */
+    void update(String key, String value);
+    /**
+     * @brief Get the value of a key by using the key.
      * 
      * @param key Key to get the value of.
      * @return String Value of the key.
      */
     String get(String key);
+     /**
+     * @brief Get a key by using the index.
+     * 
+     * @param index Index to get the key.
+     * @return String Key name.
+     */
+    String get_key(int index);
     /**
      * @brief Check if the map contains a key.
      * 

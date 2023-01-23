@@ -21,6 +21,14 @@ void Map::add(String key, String value) {
     }
 }
 
+void Map::update(String key, String value) {
+    for (int i = 0; i < MAP_SIZE; i++) {
+        if (key == _keys[i]) {
+            _values[i] = value;
+        }
+    }
+}
+
 String Map::get(String key) {
     for (int i = 0; i < MAP_SIZE; i++) {
         if (key == _keys[i]) {
@@ -29,6 +37,14 @@ String Map::get(String key) {
     }
 
     return "";
+}
+
+String Map::get_key(int index) {
+    if (index < MAP_SIZE) {
+        return _keys[index];
+    } else {
+        return "";
+    }
 }
 
 bool Map::contains(String key) {
