@@ -1,7 +1,6 @@
 #pragma once
 
 #include <Arduino.h>
-#include <string.h>
 
 /**
  * @brief Class to send and recieve CAN messages over the CAN bus.

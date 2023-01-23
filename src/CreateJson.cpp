@@ -11,8 +11,7 @@ CreateJson::~CreateJson() {
 }
 
 void CreateJson::append(String key, String value) {
-    String jsonString = "\"" + key + "\":\"" + value + "\",";
-    _json_string += json_string;
+    _json_string += "\"" + key + "\":\"" + value + "\",";
 }
 
 String CreateJson::get_json_string() {

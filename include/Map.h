@@ -32,7 +32,7 @@ public:
      * @param key Key to get the value of.
      * @return String Value of the key.
      */
-    String get(int key);
+    String get(String key);
     /**
      * @brief Check if the map contains a key.
      * 
@@ -40,7 +40,7 @@ public:
      * @return true If the map contains the key.
      * @return false If the map does not contain the key.
      */
-    bool contains(int key);
+    bool contains(String key);
     /**
      * @brief Get the size of the map.
      * 
@@ -49,7 +49,7 @@ public:
     int get_size();
 
 private:
-    int size_;               /*< Size of the map. */
-    String keys[MAP_SIZE];   /*< Array with keys used to locate values in the values array. */
-    String values[MAP_SIZE]; /*< Array with values with help of the keys the values can be located. */
+    int    _size;             /*< Size of the map. */
+    String _keys[MAP_SIZE];   /*< Array with keys used to locate values in the values array. */
+    String _values[MAP_SIZE]; /*< Array with values with help of the keys the values can be located. */
 };

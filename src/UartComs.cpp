@@ -3,10 +3,12 @@
 #define TX_PIN 6
 #define RX_PIN 7
 
+#define BAUD_RATE 9600
+
 UartComs::UartComs() : 
     _uart(SoftwareSerial(RX_PIN, TX_PIN)) 
 {
-    _uart.begin(9600);
+    _uart.begin(BAUD_RATE);
 }
 
 UartComs::~UartComs() {

@@ -19,11 +19,11 @@ public:
 	virtual ~UartComs();
 
 	/**
-	 * @brief Send a UART message.
+	 * @brief Send a message over UART.
 	 * 
 	 * @param message Message to send.
 	 */
-	void send_message(uint16_t id, String message);
+	void send_message(String message);
 
 private:
     SoftwareSerial _uart; /*< UART Instance used for communcation */
